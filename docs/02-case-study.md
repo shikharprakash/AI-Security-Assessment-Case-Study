@@ -2,23 +2,6 @@
 
 # 2. Case study: taking an AI security assessment from idea to public launch
 
-## Why this is a case study and not a business case
-
-I was asked, more than once, to publish "the business case" for this work. I decided not to, and the
-reason is worth stating because it is itself a product-management judgement.
-
-A business case's substance **is** the part that cannot be published. Its load-bearing content is the
-revenue model, the attach-rate economics, the resourcing ask, the unreleased roadmap, and the internal
-read on competing products — including competing products inside the same company. Remove those and
-you do not have a shorter business case. You have a shell, and any reader who has written one
-recognises the shell immediately.
-
-A case study is the better artefact anyway, and not merely as a consolation. A business case argues
-*forward*, to an audience of one executive, for a decision not yet taken. A portfolio reader wants the
-opposite: a decision that **was** taken, what happened next, and what the author now knows that they
-did not know before. For a methodology template rather than this specific product's numbers, see
-[6. Decision log](06-decision-log.md) and [7. Standards landscape](07-standards-landscape.md).
-
 ## The problem, in one sentence
 
 Enterprises are deploying AI faster than they can reason about its security, and the binding
