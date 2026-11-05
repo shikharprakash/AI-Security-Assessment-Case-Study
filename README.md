@@ -75,9 +75,3 @@ misattributes a third party's work, please open an issue and I will correct or r
 Prose and diagrams are licensed **CC BY 4.0** — see [LICENSE](LICENSE), which also sets out what the
 grant does *not* cover (Cisco trademarks and product content; the SANS, OWASP, MITRE, NIST and ISO
 materials, each the property of its publisher). `push_to_github.sh` is MIT.
-
-## Publishing
-
-Run `./push_to_github.sh`. It runs the confidentiality review first and refuses to continue if
-anything fails, then asks for a GitHub personal access token, creates the repository on your account,
-and pushes. The token is never written to disk or to the git config.
