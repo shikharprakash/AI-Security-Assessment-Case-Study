@@ -1,0 +1,43 @@
+%% Reference architecture for a self-serve risk-assessment product.
+%% A pattern, not a description of any deployed system. See docs/03-architecture.md.
+flowchart TB
+    subgraph CAPTURE["1 · Capture"]
+        Q["Adaptive questionnaire<br/>conditional visibility<br/><i>ask the fewest questions that still separate</i>"]
+    end
+
+    subgraph NORMALISE["2 · Normalise"]
+        N["Typed, validated profile<br/><i>discard answers to questions<br/>that were never shown</i>"]
+    end
+
+    subgraph EVALUATE["3 · Evaluate"]
+        E["Scoring engine<br/><b>pure · deterministic · no I/O</b><br/><i>same input, same output, forever</i>"]
+    end
+
+    subgraph EXPLAIN["4 · Explain"]
+        X["Rationale and prioritisation<br/><i>the only layer a language model<br/>may participate in</i>"]
+    end
+
+    subgraph RENDER["5 · Render"]
+        P["One prepared-data model"]
+        R1["Web result"]
+        R2["Document<br/><i>a product surface,<br/>not an export</i>"]
+    end
+
+    CONTENT[("Content layer<br/>questions · copy · taxonomies<br/><b>data, not code</b><br/>seed → promoted → override")]
+
+    HARNESS["Evaluation harness<br/>invariants · golden cases<br/>differential pairs · completeness<br/><i>never a runtime dependency</i>"]
+
+    Q --> N --> E --> X --> P
+    P --> R1
+    P --> R2
+
+    CONTENT -.->|resolved at runtime| Q
+    CONTENT -.->|resolved at runtime| X
+    HARNESS -.->|asserts against| E
+
+    classDef pure fill:#eef7ee,stroke:#2d6a2d,stroke-width:2px
+    classDef data fill:#eef2f8,stroke:#2d4a6a,stroke-width:1px
+    classDef test fill:#f8f4ee,stroke:#6a522d,stroke-width:1px,stroke-dasharray: 4 3
+    class E pure
+    class CONTENT data
+    class HARNESS test

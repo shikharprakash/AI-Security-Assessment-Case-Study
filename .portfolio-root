@@ -1,0 +1,2 @@
+# Marker: identifies this directory as the portfolio repository root.
+# push_to_github.sh refuses to run without it. See tools/prepublish-check.sh.

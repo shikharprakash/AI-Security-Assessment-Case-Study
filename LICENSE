@@ -1,0 +1,29 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Shikhar Prakash
+
+The written content of this repository — the documents under docs/, the README,
+and the diagrams — is licensed under the Creative Commons Attribution 4.0
+International License.
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the license, and
+indicate if changes were made.
+
+  Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+  Full legal code:        https://creativecommons.org/licenses/by/4.0/legalcode
+
+SCOPE OF THIS LICENSE
+
+This license covers only the prose and diagrams authored by Shikhar Prakash for
+this repository. It does not and cannot extend to:
+
+  - Any Cisco Systems, Inc. product, source code, documentation or trademark.
+  - The SANS AI Security Maturity Model, which is the copyrighted work of the
+    SANS Institute and is referenced here by citation only.
+  - The OWASP Top 10 for LLM Applications, the OWASP Top 10 for Agentic
+    Applications, MITRE ATLAS, the NIST AI Risk Management Framework, or
+    ISO/IEC 42001, each of which is governed by its own publisher's terms and is
+    referenced here by citation only.
+
+See DISCLAIMER.md.

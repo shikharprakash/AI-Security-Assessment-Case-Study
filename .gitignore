@@ -1,0 +1,54 @@
+# Working drafts — not repo artefacts
+linkedin-post.md
+
+# Local-only tooling. The pre-publication checker enumerates the strings it
+# screens for, which makes it a precise index of what it protects. It stays local.
+/tools/
+/.scratch/
+
+# No binaries, ever. They defeat text-based confidentiality review and carry
+# authoring metadata (author, company, template provenance, tracked changes).
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+*.zip
+*.tar.gz
+
+# Guard rails against anything dragged in from a neighbouring directory
+sans-*
+*AISMM*
+raw_text.txt
+raw_tables.txt
+raw_words.jsonl
+/framework/
+/samples/
+/web/
+airiskmaturity*/
+handoff.md
+*.db
+*.db-wal
+*.db-shm
+
+# Agent and worktree directories
+.claude/
+**/worktrees/
+
+# OS and editor noise
+.DS_Store
+._*
+~$*
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Secrets and runtime
+.env
+.env.*
+
+# Build leftovers
+node_modules/
+.venv/
+__pycache__/
+*.pyc
